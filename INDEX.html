@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookMyAccountants - www.bookmyaccountants.com</title>
+  <link rel="canonical" href="https://www.bookmyaccountants.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background-color: #ffffff; 
+      color: #333; 
+      scroll-behavior: smooth; 
+      position: relative;
+    }
+    body::before {
+      content: "";
+      background: url("watermark.png") center center no-repeat;
+      background-size: 50%;
+      opacity: 0.05;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    header { background-color: #0d47a1; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    footer { background-color: #0d47a1; color: white; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+    .container { padding: 20px; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .service-card {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      height: 250px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .service-card img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .service-card span {
+      background-color: rgba(13,71,161,0.9);
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      font-size: 18px;
+      z-index: 2;
+    }
+    .blog-post { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    form label { display: block; margin-top: 10px; }
+    form input, form textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    form button { background-color: #0d47a1; color: white; padding: 10px 15px; border: none; margin-top: 10px; cursor: pointer; }
+    form button:hover { background-color: #1565c0; }
+    section h2, .blog-post h3 { text-align: center; }
+    #home {
+      background: linear-gradient(rgba(13,71,161,0.7), rgba(13,71,161,0.7)), url("welcome-bg.jpg") center center no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: left;
+      padding: 40px;
+      border-radius: 8px;
+    }
+    #home h2 { text-align: left; }
+    #blog {
+      background: linear-gradient(rgba(13,71,161,0.7), rgba(13,71,161,0.7)), url("blog-bg.jpg") center center no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: left;
+      padding: 40px;
+      border-radius: 8px;
+    }
+    #blog h2 { text-align: left; }
+    #contact {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      text-align: left;
+      padding: 40px;
+      border-radius: 8px;
+    }
+    #contact h2 { text-align: left; }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>BookMyAccountants</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="home" data-aos="fade-up">
+      <h2>Welcome to BookMyAccountants</h2>
+      <p>We are experts in delivering reliable, modern, and efficient business accounting solutions, trusted by hundreds of satisfied clients.</p>
+      <p>Our firm specializes in providing end-to-end accounting, taxation, and compliance services for individuals, small businesses, and corporate clients. We focus on accuracy, transparency, and quick turnaround times to keep your finances healthy and stress-free.</p>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p>At BookMyAccountants, we are passionate about helping businesses stay compliant and grow through robust accounting and taxation services. With years of expertise in computerized accounting, GST, and income tax, we pride ourselves on precision, integrity, and professionalism.</p>
+      <p>Our dedicated team strives to provide personalized attention to each client. We continuously upgrade our skills and systems to deliver the best results and keep you ahead of compliance deadlines.</p>
+    </section>
+
+    <section id="services" data-aos="fade-up">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="accounting.jpg" alt="Accounting"/>
+          <span>Computerized Accounting in Tally, Busy, Marg</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="gst.jpg" alt="GST"/>
+          <span>GST Return Filing</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="income_tax.jpg" alt="Income Tax"/>
+          <span>Income Tax Return Filing</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="audit.jpg" alt="Audit"/>
+          <span>Auditing Services</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="pvt_ltd.jpg" alt="Private Limited Company"/>
+          <span>Private Limited Company Services</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="esi.jpg" alt="ESI"/>
+          <span>ESI Services</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="trademark.jpg" alt="Trademark"/>
+          <span>Trademark Registration Services</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="msme.jpg" alt="MSME"/>
+          <span>MSME Services</span>
+        </a>
+        <a href="#contact" class="service-card" data-aos="zoom-in">
+          <img src="tax.jpg" alt="Tax Consultation"/>
+          <span>Direct / Indirect Tax Consultation</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="blog" data-aos="fade-up">
+      <h2>Blog & Resources</h2>
+      <p>Stay informed with our latest news, articles, and guides covering essential accounting and tax topics. We help you stay compliant and aware of regulatory changes that impact your business.</p>
+      <div class="blog-post" data-aos="fade-right">
+        <h3>Why choose professional bookkeeping?</h3>
+        <p>Professional bookkeeping saves you time, reduces errors, and ensures compliance with laws. Stay tuned for more insights!</p>
+      </div>
+      <div class="blog-post" data-aos="fade-left">
+        <h3>GST Return Filing Tips</h3>
+        <p>Keep your invoices organized and file on time to avoid penalties. Learn more in upcoming posts.</p>
+        <p>Our experts can help you manage GST input credits, maintain your ledgers, and ensure timely filing every month or quarter, giving you peace of mind.</p>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>Email: vkumarco2019@gmail.com</p>
+      <p>Mobile: 9871528867</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer data-aos="fade-up">
+    &copy; 2025 BookMyAccountants | www.bookmyaccountants.com | All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
