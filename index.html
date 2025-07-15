@@ -182,16 +182,25 @@
 
     <section id="contact" data-aos="fade-up">
       <h2>Contact Us</h2>
-      <p>Email: vkumarco2019@gmail.com</p>
+      <p>Email: info@bookmyaccountants.in</p>
       <p>Mobile: 9871528867</p>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
+      <form action="https://formspree.io/f/mrblggae" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" name="_replyto" required><br><br>
+
+    <label for="phone">Your Mobile Number:</label><br>
+    <input type="tel" name="phone" required><br><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea name="message" required></textarea><br><br>
+
+    <!-- 🔐 Spam protection field -->
+    <input type="text" name="_gotcha" style="display:none"> <!-- spam protection -->
+
+    <button type="submit">Send Message</button>
       </form>
     </section>
   </div>
